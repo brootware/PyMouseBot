@@ -23,9 +23,9 @@ A python script to move your mouse every few seconds to appear active on Skype, 
 
 ## Core Features
 
-- 💻 Cross platform. Both Windows and MacOS. Automagically detects what OS you're running on!
-- 🕒 Just run the program together with time you want to stop at in `python mouseBot.py HH:MM:SS` 24 hr format!
-- 🪶 Ultra light! No compiled binaries. Just a cli app you can use via python.
+- 💻  Cross platform. Both Windows and MacOS. Automagically detects what OS you're running on!
+- 🕒  Just run the program together with time you want the bot to stop at in `HH:MM:SS` 24 hr format!
+- 🪶  Ultra light! No compiled binaries. Just a cli app you can use via python.
 
 ## How to use
 
