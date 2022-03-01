@@ -28,3 +28,5 @@ A python script to move your mouse every few seconds to appear active on Skype, 
 - 🪶 Ultra light! No compiled binaries. Just a cli app you can use via python.
 
 ## How to use
+
+- [] To add instructions
