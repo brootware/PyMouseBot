@@ -29,4 +29,4 @@ A python script to move your mouse every few seconds to appear active on Skype, 
 
 ## How to use
 
-- [] To add instructions
+- [ ] To add instructions
