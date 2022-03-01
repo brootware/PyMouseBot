@@ -223,6 +223,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 py_mouse_bot
+mousebot/
 
 # C extensions
 *.so

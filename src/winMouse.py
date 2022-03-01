@@ -8,4 +8,4 @@ def winMoveClick(posx, posy):
     # click even call. Optional
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, posx, posy, 0, 0)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, posx, posy, 0, 0)
-    print(f"Win Mouse moved to pos x={posx} and pos y={posy}")
+    print(f"[ + ] Window Mouse moved to pos x={posx} and pos y={posy}")
