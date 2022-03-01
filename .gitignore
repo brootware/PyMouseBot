@@ -222,6 +222,7 @@ compare*
 __pycache__/
 *.py[cod]
 *$py.class
+py_mouse_bot
 
 # C extensions
 *.so
