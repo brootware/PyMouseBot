@@ -18,7 +18,6 @@ simplejson==3.17.6
 toml==0.10.2
 tornado==6.1
 unicodedata2==14.0.0
-xmlrpclib==1.0.1
 zipp==3.7.0
 certifi==2021.10.8
 charset-normalizer==2.0.12

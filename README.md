@@ -49,13 +49,19 @@ alias python=python3
 python -m pip install --user virtualenv
 python -m venv bottybot
 source ./bottybot/bin/activate
-pip install .
+pip install -r requirements.txt
 ```
 
 Run as below
 
 ```bash
 python mousebot.py 23:00:00
+```
+
+OR
+
+```bash
+pymousebot 23:00:00
 ```
 
 ### On Windows
@@ -69,13 +75,19 @@ Activate virtual environment and install requirements.
 ```powershell
 python -m venv bottybot
 bottybot\Scripts\activate
-pip install .
+pip install -r requirements.txt
 ```
 
 Run as below
 
 ```powershell
 python .\mousebot.py 23:00:00
+```
+
+OR
+
+```bash
+pymousebot 23:00:00
 ```
 
 ## Troubleshoot
