@@ -14,7 +14,7 @@
                 +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+
 ``` -->
 <p align="center">
-  <img src="./mouseascii.png" alt="Python Mouse Bot!"/>
+  <img src="./asciimouse.png" alt="Python Mouse Bot!"/>
 </p>
 
 > If you're from GT and annoyed with SGVPN idle timeouts while working on development laptop, You might find this useful.
