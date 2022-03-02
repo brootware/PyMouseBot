@@ -25,7 +25,7 @@ setup(
     url="https://github.com/brootware/PyMouseBot.git",
     packages=['src'],
     platforms='any',
-    py_modules=['mousebot'],
+    py_modules=['mousebot','src.macMouse','src.winMouse'],
     entry_points='''
     [console_scripts]
     pymousebot=mousebot:main
