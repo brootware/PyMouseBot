@@ -19,8 +19,8 @@ def runMouse(time_to_stop):
         # get screen size
         root = tk.Tk()
         # TODO work on limiting the screen clicks to bottom right
-        screen_width = root.winfo_screenwidth() - 300
-        screen_height = root.winfo_screenheight() - 800
+        screen_width = root.winfo_screenwidth() - 500
+        screen_height = root.winfo_screenheight() - 1000
 
         # pass random value to axis
         posx = randint(screen_height, screen_width)
