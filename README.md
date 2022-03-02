@@ -77,3 +77,11 @@ Run as below
 ```powershell
 python .\mousebot.py 23:00:00
 ```
+
+## Troubleshoot
+
+`import tkinter` might fail on some mac. Be sure to install python-tk via brew.
+
+```bash
+brew install python-tk
+```
