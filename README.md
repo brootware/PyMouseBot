@@ -27,24 +27,53 @@ A python cli bot to move your mouse every few seconds to appear active on Skype,
 - 🕒  Just run the program together with time you want the bot to stop at in `HH:MM:SS` 24 hr format!
 - 🪶  Ultra light! No compiled binaries. Just a cli app you can use via python.
 
+## Pre-requisites
+
+- [Python3](https://www.python.org/downloads/) installed
+- [pip](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) installed
+
 ## How to use
 
-- [ ] To add instructions
+- [x] To add instructions
 
 ### On Mac
 
 ```bash
 git clone https://github.com/brootware/PyMouseBot.git && cd PyMouseBot
+```
+
+Activate virtual environment and install requirements.
+
+```bash
+alias python=python3
+python -m pip install --user virtualenv
 python -m venv bottybot
 source ./bottybot/bin/activate
 pip install .
+```
+
+Run as below
+
+```bash
+python mousebot.py 23:00:00
 ```
 
 ### On Windows
 
 ```powershell
 git clone https://github.com/brootware/PyMouseBot.git && cd PyMouseBot
+```
+
+Activate virtual environment and install requirements.
+
+```powershell
 python -m venv bottybot
 bottybot\Scripts\activate
 pip install .
+```
+
+Run as below
+
+```powershell
+python .\mousebot.py 23:00:00
 ```
