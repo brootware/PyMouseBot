@@ -30,3 +30,21 @@ A python cli bot to move your mouse every few seconds to appear active on Skype,
 ## How to use
 
 - [ ] To add instructions
+
+### On Mac
+
+```bash
+git clone https://github.com/brootware/PyMouseBot.git && cd PyMouseBot
+python -m venv bottybot
+source ./bottybot/bin/activate
+pip install .
+```
+
+### On Windows
+
+```powershell
+git clone https://github.com/brootware/PyMouseBot.git && cd PyMouseBot
+python -m venv bottybot
+bottybot\Scripts\activate
+pip install .
+```

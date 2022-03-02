@@ -19,8 +19,8 @@ def runMouse(time_to_stop):
         # get screen size
         root = tk.Tk()
         # TODO work on limiting the screen clicks to bottom right
-        screen_width = root.winfo_screenwidth() - 500
-        screen_height = root.winfo_screenheight() - 1000
+        screen_width = root.winfo_screenwidth() - 1000
+        screen_height = root.winfo_screenheight() - 500
 
         # pass random value to axis
         posx = randint(screen_height, screen_width)
@@ -28,12 +28,12 @@ def runMouse(time_to_stop):
 
         if platform.system() == "Darwin":
             from src.macMouse import macMoveClick
-
             macMoveClick(posx, posy)
         elif platform.system() == "Windows":
             from src.winMouse import winMoveClick
-
             winMoveClick(posx, posy)
+        else:
+            print(f"[ - ] Seems like you are running on unsupported platform {platform.system()}. Currently the bot is only supported on Windows and Mac(Darwin).")
 
         if current_time > time_to_stop:
             iso_time = time.strftime("%Y-%m-%dT%H:%M:%SZ", time_to_stop)
@@ -41,7 +41,7 @@ def runMouse(time_to_stop):
             condition_to_run = False
 
         # Interval in seconds
-        time.sleep(10)
+        time.sleep(15)
 
 
 def main():
