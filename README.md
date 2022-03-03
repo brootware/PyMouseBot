@@ -58,9 +58,11 @@ Run as below
 python mousebot.py 23:00:00
 ```
 
-OR
+OR if you want to run as environment variable, run this below.
 
 ```bash
+pip install .
+pip install -r requirements
 pymousebot 23:00:00
 ```
 
@@ -84,9 +86,11 @@ Run as below
 python .\mousebot.py 23:00:00
 ```
 
-OR
+OR if you want to run as environment variable, run this below.
 
 ```bash
+pip install .
+pip install -r requirements
 pymousebot 23:00:00
 ```
 
