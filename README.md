@@ -19,7 +19,7 @@
 
 > If you're from GT and annoyed with SGVPN idle timeouts while working on development laptop, You might find this useful.
 
-A python cli bot to move your mouse every few seconds to appear active on Skype, Teams or Zoom as you go AFK. 🐭 🐭
+A python cli bot to move your mouse every few seconds to appear active on Skype, Teams or Zoom as you go AFK. 🐭 🤖
 
 ## Core Features
 
