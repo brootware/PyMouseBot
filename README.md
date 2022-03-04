@@ -94,6 +94,18 @@ pip install -r requirements
 pymousebot 23:00:00
 ```
 
+## Change time interval of the movement
+
+```bash
+python mousebot.py 23:00:00 -i 5
+```
+
+OR
+
+```bash
+pymousebot 23:00:00 -i 5
+```
+
 ## Troubleshoot
 
 `import tkinter` might fail on some mac. Be sure to install python-tk via brew.

@@ -12,7 +12,7 @@ import platform
 import sys
 
 
-def runMouse(time_to_stop):
+def runMouse(time_to_stop, time_interval):
     print(
         """\
  ______          ______                            ______             
@@ -29,6 +29,8 @@ def runMouse(time_to_stop):
     """
     )
     print("If you want to stop the bot, press CTRL+C in the terminal")
+
+    # Start of program
     condition_to_run = True
     while condition_to_run:
         # get current time
@@ -62,12 +64,20 @@ def runMouse(time_to_stop):
             condition_to_run = False
 
         # Interval in seconds
-        time.sleep(15)
+        if time_interval is None:
+            time.sleep(15)
+        else:
+            time.sleep(float(time_interval))
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("time", help="Please enter the time in HH:MM:SS format")
+    parser.add_argument(
+        "-i",
+        "--interval",
+        help="Add in time interval in seconds. (E.g 30) for 30 seconds",
+    )
     args = parser.parse_args()
 
     try:
@@ -76,12 +86,12 @@ def main():
     except ValueError:
         print(f"[ - ] The time you entered is incorrect. Try again in HH:MM:SS format")
 
-    runMouse(args.time)
-
-
-if __name__ == "__main__":
     try:
-        main()
+        runMouse(args.time, args.interval)
     except KeyboardInterrupt:
         print(f"[ + ] The bot is stopped by the user. Good bye!")
         sys.exit()
+
+
+if __name__ == "__main__":
+    main()
