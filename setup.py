@@ -20,14 +20,21 @@ setup(
     author_email="ominbruce@outlook.com",
     maintainer="Oaker Min",
     maintainer_email="ominbruce@outlook.com",
-    long_description= long_description,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/brootware/PyMouseBot.git",
-    packages=['src'],
-    platforms='any',
-    py_modules=['mousebot','src.macMouse','src.winMouse'],
-    entry_points='''
+    packages=["src"],
+    py_modules=["mousebot"],
+    install_requires=[
+        "pyobjc-framework-Cocoa",
+        "pyobjc-framework-Quartz",
+        "pypiwin32",
+        "pywin32",
+        "tk",
+    ],
+    platforms="any",
+    entry_points="""
     [console_scripts]
     pymousebot=mousebot:main
-    '''
+    """,
 )
