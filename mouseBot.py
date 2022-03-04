@@ -27,8 +27,8 @@ def runMouse(time_to_stop):
                 |P|o|w|e|r|e|d| |b|y| |B|r|o|o|t|w|a|r|e|
                 +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+
     """
-    print("If you want to stop the bot, press CTRL+C in the terminal")
     )
+    print("If you want to stop the bot, press CTRL+C in the terminal")
     condition_to_run = True
     while condition_to_run:
         # get current time
