@@ -5,7 +5,6 @@ Utility to move Mouse
 
 import time
 import argparse
-import time
 from random import randint
 import tkinter as tk
 import platform
