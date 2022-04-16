@@ -24,7 +24,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/brootware/PyMouseBot.git",
     packages=["src"],
-    py_modules=["mousebot"],
+    py_modules=["mousebot","src.macMouse","src.winMouse"],
     install_requires=[
         "pyobjc-framework-Cocoa",
         "pyobjc-framework-Quartz",
