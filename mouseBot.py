@@ -10,10 +10,7 @@ import tkinter as tk
 import platform
 import sys
 
-
-def runMouse(time_to_stop, time_interval):
-    print(
-        """\
+banner = """\
  ______          ______                            ______             
 (_____ \        |  ___ \                          (____  \       _    
  _____) )   _   | | _ | | ___  _   _  ___  ____    ____)  ) ___ | |_  
@@ -25,8 +22,12 @@ def runMouse(time_to_stop, time_interval):
                 +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+
                 |P|o|w|e|r|e|d| |b|y| |B|r|o|o|t|w|a|r|e|
                 +-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+-+
+                
+    https://github.com/brootware
+    https://brootware.github.io 
     """
-    )
+
+def runMouse(time_to_stop, time_interval):
     print("If you want to stop the bot, press CTRL+C in the terminal")
 
     # Start of program
@@ -70,6 +71,7 @@ def runMouse(time_to_stop, time_interval):
 
 
 def main():
+    print(banner)
     parser = argparse.ArgumentParser()
     parser.add_argument("time", help="Please enter the time in HH:MM:SS format")
     parser.add_argument(
